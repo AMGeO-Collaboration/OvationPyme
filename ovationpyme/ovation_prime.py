@@ -727,7 +727,7 @@ class SeasonalFluxEstimator(object):
         if flux < 0.:
             flux = 0.
 
-        if self.atype is not 'ions':
+        if self.atype != 'ions':
             #Electron Energy Flux
             if fluxtype == 'energy':
                 if flux > 10.:
